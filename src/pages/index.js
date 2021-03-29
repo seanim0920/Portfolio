@@ -4,11 +4,12 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import withSplashScreen from '../components/withSplashScreen';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
+    <SEO title="Welcome" />
+    <h1>Welcome</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
@@ -26,4 +27,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default withSplashScreen(IndexPage);

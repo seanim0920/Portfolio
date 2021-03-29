@@ -1,0 +1,33 @@
+.splash-screen {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10vmin;
+  animation-delay: 1s;
+}
+
+.splash-screen .underline {
+  background-color: white;
+  margin-top: -20px;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  animation: ease-in-out;
+  animation-name: run;
+  animation-duration: 1s;
+}
+
+@keyframes run {
+  0% {
+    width: 0px;
+    background-color: #000;
+  }
+  100% {
+    width: 100%;
+    background-color: #fff;
+  }
+}
