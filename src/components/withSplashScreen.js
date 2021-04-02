@@ -4,8 +4,9 @@ import "./splash-screen.css"
 function LoadingMessage() {
   return (
     <div className="splash-screen">
-      <h1>Welcome.</h1>
-      <div className="underline"></div>
+      <div className="background">
+        <h1>Welcome.</h1>
+      </div>
     </div>
   )
 }
@@ -25,7 +26,7 @@ function withSplashScreen(WrappedComponent) {
           this.setState({
             loading: false,
           })
-        }, 100000)
+        }, 10)
       } catch (err) {
         console.log(err)
         this.setState({
