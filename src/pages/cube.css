@@ -51,7 +51,7 @@
     height: 40vmin;
     width: 40vmin;
     /*background-image: url("https://jordizle.com/static/img/codepen/blank.png");*/
-    background-color: white;
+    background-color: gray;
     -webkit-touch-callout: none;
     -moz-touch-callout: none;
     -ms-touch-callout: none;
@@ -111,6 +111,7 @@
     -ms-transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
     -o-transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
     transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
+    background-color: white;
     outline: 1px solid transparent; }
   
   .cube > div:nth-child(4) {

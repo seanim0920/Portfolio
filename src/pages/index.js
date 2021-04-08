@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -6,31 +7,74 @@ import SEO from "../components/seo"
 import withSplashScreen from "../components/withSplashScreen"
 import "./cube.css"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Welcome" />
+const IndexPage = () => {
+  const [isTouchingCube, setIsTouchingCube] = useState(false)
+  const [originalMousePosition, setOriginalMousePosition] = useState({ x: null, y: null })
+  const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 })
 
-    <div id="wrapper">
-      <div class="viewport">
-        <div class="cube">
-          <div class="side"></div>
-          <div class="side"></div>
-          <div class="side">
-            <h1
-              style={{
-                fontSize: "8.75vmin",
-                margin: "1vmin",
-                position: "absolute",
-                top: "0vmin",
-                color: "black",
-              }}
-            >
-              fronteras
-            </h1>
-          </div>
-          <div class="side"></div>
-          <div class="side"></div>
-          <div class="side">
+  useEffect(() => {
+    const updateOriginalMousePosition = (ev) => {
+      if (isTouchingCube) setOriginalMousePosition({ x: ev.clientX, y: ev.clientY })
+    };
+
+    window.addEventListener("mousedown", updateOriginalMousePosition);
+    return () => {
+      window.removeEventListener("mousedown", updateOriginalMousePosition);
+    };
+  }, [isTouchingCube])
+  
+  const updateMousePosition = useCallback(ev => {
+    setMouseOffset({ x: originalMousePosition.x - ev.clientX, y: originalMousePosition.y - ev.clientY });
+    console.log(originalMousePosition.y);
+  }, [originalMousePosition]);
+  
+  const cubeStyle = {
+    transform: `rotateX(${(mouseOffset.y/30) + 136}deg) rotateY(${(mouseOffset.x/30) + 75}deg)`,
+  };
+
+  return (
+    <>
+      <SEO title="Welcome" />
+
+      <div id="wrapper">
+        <div class="viewport">
+          <div
+            class="cube"
+            role="button"
+            tabIndex={0}
+            onMouseDown={() => {
+              window.addEventListener("mousemove", updateMousePosition);
+              window.addEventListener(
+                "mouseup",
+                () => {
+                  window.removeEventListener("mousemove", updateMousePosition);
+                  setMouseOffset({ x: 0, y: 0 });
+                },
+                { once: true }
+              );
+            }}
+            onMouseEnter={()=>setIsTouchingCube(true)}
+            onMouseLeave={()=>setIsTouchingCube(false)}
+            style={cubeStyle}
+          >
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side">
+              <h1
+                style={{
+                  fontSize: "8.75vmin",
+                  margin: "1vmin",
+                  position: "absolute",
+                  top: "0vmin",
+                  color: "black",
+                }}
+              >
+                fronteras
+              </h1>
+            </div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side">
               <h1
                 style={{
                   fontSize: "8.75vmin",
@@ -42,11 +86,12 @@ const IndexPage = () => (
               >
                 sean
               </h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
 export default withSplashScreen(IndexPage)
