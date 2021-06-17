@@ -42,7 +42,8 @@
     -moz-transform: rotateX(136deg) rotateY(75deg);
     -ms-transform: rotateX(136deg) rotateY(75deg);
     -o-transform: rotateX(136deg) rotateY(75deg);
-    transform: rotateX(136deg) rotateY(75deg); }
+    transform: rotateX(136deg) rotateY(75deg);
+   }
   
   .cube > div {
     overflow: hidden;
@@ -51,7 +52,7 @@
     height: 40vmin;
     width: 40vmin;
     /*background-image: url("https://jordizle.com/static/img/codepen/blank.png");*/
-    background-color: gray;
+    background-color: black;
     -webkit-touch-callout: none;
     -moz-touch-callout: none;
     -ms-touch-callout: none;
@@ -61,7 +62,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
-    user-select: none; }
+    user-select: none;
+    outline: 5px solid white;
+    outline-offset: -5px; }
   
   .cube > div > div.cube-image {
     width: 40vmin;
@@ -83,11 +86,11 @@
     .cube > div > div.cube-image.active {
       color: red; }
   
-  .cube > div:hover {
-    cursor: pointer; }
+  .cube:hover {
+    cursor: grab; }
   
-  .cube > div:active {
-    cursor: pointer; }
+  .cube:active {
+    cursor: grabbing; }
   
   .cube > div:first-child {
     -webkit-transform: rotateX(90deg) translateZ(20vmin);
@@ -95,7 +98,9 @@
     -ms-transform: rotateX(90deg) translateZ(20vmin);
     -o-transform: rotateX(90deg) translateZ(20vmin);
     transform: rotateX(90deg) translateZ(20vmin);
-    outline: 1px solid transparent; }
+    outline: 1px solid transparent;
+    outline: 5px solid white;
+    outline-offset: -5px; }
   
   .cube > div:nth-child(2) {
     -webkit-transform: translateZ(20vmin);
@@ -103,7 +108,9 @@
     -ms-transform: translateZ(20vmin);
     -o-transform: translateZ(20vmin);
     transform: translateZ(20vmin);
-    outline: 1px solid transparent; }
+    outline: 1px solid transparent;
+    outline: 5px solid white;
+    outline-offset: -5px; }
   
   .cube > div:nth-child(3) {
     -webkit-transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
@@ -112,7 +119,9 @@
     -o-transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
     transform: rotateY(90deg) translateZ(20vmin) rotate(180deg);
     background-color: white;
-    outline: 1px solid transparent; }
+    outline: 1px solid transparent;
+    outline: 5px solid white;
+    outline-offset: -5px; }
   
   .cube > div:nth-child(4) {
     -webkit-transform: rotateY(180deg) translateZ(20vmin);
@@ -128,7 +137,9 @@
     -ms-transform: rotateY(-90deg) translateZ(20vmin);
     -o-transform: rotateY(-90deg) translateZ(20vmin);
     transform: rotateY(-90deg) translateZ(20vmin);
-    outline: 1px solid transparent; }
+    outline: 1px solid transparent;
+    outline: 5px solid white;
+    outline-offset: -5px; }
   
   .cube > div:nth-child(6) {
     background-color: #000000;
@@ -137,6 +148,7 @@
     -ms-transform: rotateX(-90deg) rotate(270deg) translateZ(20vmin);
     -o-transform: rotateX(-90deg) rotate(270deg) translateZ(20vmin);
     transform: rotateX(-90deg) rotate(270deg) translateZ(20vmin);
+    outline: 1px solid transparent;
     outline: 5px solid white;
     outline-offset: -5px; }
   
