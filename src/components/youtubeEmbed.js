@@ -10,7 +10,7 @@ const YoutubeEmbed = ({ embedId }) => (
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       title="Embedded youtube"
-      style={{width: "auto", height: "100%"}}
+      style={{width: "100%", height: "100%"}}
     />
 );
 
