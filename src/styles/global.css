@@ -66,6 +66,7 @@ section {
   height: 100vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  margin-right: 10vmin;
 }
 
 article {

@@ -2,18 +2,17 @@ import * as React from "react"
 import { useState, useEffect, useCallback } from "react"
 
 import SEO from "../components/seo"
-import video from "../video/grocerease.mp4"
+import android from "../images/upvoiceandroid.webp";
+//import video from "../video/grocerease.mp4"
 //import "./page-2.css"
+//<SEO title="egig inc: Upvoice" />
 
 const UpvoicePage = () => {
   return (
     <>
-      <SEO title="egig inc: Upvoice" />
 
       <section>
-        <video controls>
-          <source src={video} type="video/mp4" />
-        </video>
+        <img src={android} alt="Upvoice Web App Map View" style={{ height: "100%", width: "auto" }} />
 
         <article>
           <div>
@@ -23,7 +22,7 @@ const UpvoicePage = () => {
             <h3>
               Upvoice - Crowdfunding Platform <br />
               Front-End Developer / UI Designer <br />
-              Duration: Sept 2018 - Dec 2018 <br />
+              Duration: Jan 2019 - June 2019 <br />
             </h3>
           </div>
 

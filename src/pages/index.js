@@ -9,23 +9,27 @@ import SocialNetworkPage from "../pages/SocialNetworkPage"
 import GrocerEasePage from "../pages/GrocerEasePage"
 import UpvoicePage from "../pages/UpvoicePage"
 import FiveStarsintheDarkPage from "../pages/FiveStarsintheDarkPage"
+import AboutMePage from "../pages/AboutMePage"
 
 const IndexPage = () => {
   return (
     <>
-      <SEO title="Sean Fronteras" />
+      <SEO title="Portfolio" />
       
       {
-        //<HomePage/>
+        <HomePage/>
       }
       {
-        //<SocialNetworkPage/>
+        <AboutMePage/>
       }
       {
-        //<GrocerEasePage/>
+        <SocialNetworkPage/>
       }
       {
-        //<UpvoicePage/>
+        <UpvoicePage/>
+      }
+      {
+        <GrocerEasePage/>
       }
       {
         <FiveStarsintheDarkPage/>

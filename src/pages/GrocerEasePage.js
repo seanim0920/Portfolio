@@ -3,11 +3,11 @@ import * as React from "react"
 import SEO from "../components/seo"
 import video from "../video/grocerease.mp4"
 //import "./page-2.css"
+//<SEO title="GrocerEase" />
 
 const GrocerEasePage = () => {
   return (
     <>
-      <SEO title="GrocerEase" />
 
       <section>
         <video controls>

@@ -3,14 +3,12 @@ import * as React from "react"
 import SEO from "../components/seo"
 import YoutubeEmbed from "../components/youtubeEmbed";
 //import "./page-2.css"
+//<SEO title="Five Stars in the Dark" />
 
 const FiveStarsintheDarkPage = () => {
   return (
     <>
-      <SEO title="egig inc: Upvoice" />
-
-
-      <section style={{flexDirection: "column"}}>
+      <section style={{flexDirection: "column", marginRight: "0"}}>
         <YoutubeEmbed embedId="Q_NTqn-K1ZM"/>
         <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", height: "100vh", marginTop: "5vmin" }}>
           <div>

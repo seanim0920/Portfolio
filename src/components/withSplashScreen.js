@@ -4,9 +4,7 @@ import "./splash-screen.css"
 function LoadingMessage() {
   return (
     <div className="splash-screen">
-      <div className="background">
-        <h1>Welcome.</h1>
-      </div>
+      <h1>Welcome.</h1>
     </div>
   )
 }
@@ -26,7 +24,7 @@ function withSplashScreen(WrappedComponent) {
           this.setState({
             loading: false,
           })
-        }, 10)
+        }, 1000)
       } catch (err) {
         console.log(err)
         this.setState({
@@ -40,7 +38,9 @@ function withSplashScreen(WrappedComponent) {
       if (this.state.loading) return LoadingMessage()
 
       // otherwise, show the desired route
-      return <WrappedComponent {...this.props} />
+      return (
+        <WrappedComponent {...this.props} />
+      )
     }
   }
 }

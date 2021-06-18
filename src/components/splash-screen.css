@@ -1,38 +1,29 @@
 .splash-screen {
-  width: 100%;
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  display:flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
   font-size: 10vmin;
   animation-delay: 1s;
-}
-
-.splash-screen .background {
-  background-color: white;
-  position: relative;
-  height: 20vmin;
-  width: 20vmin;
   animation: ease-in-out;
   animation-name: run;
   animation-duration: 1s;
 }
 
-h1 {
-  color: black;
-  width: 100%;
-  height: 100%;
+.splash-screen:last-child {
+  color: white;
+  text-align: center;
+  opacity: 0;
 }
 
 @keyframes run {
   0% {
-    width: 0px;
-    background-color: #000;
+    opacity: 1;
   }
   100% {
-    width: 100%;
-    background-color: #fff;
+    opacity: 0;
   }
 }

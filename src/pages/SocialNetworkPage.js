@@ -3,11 +3,12 @@ import * as React from "react"
 import SEO from "../components/seo"
 import video from "../video/socialnetwork.mp4"
 //import "./page-2.css"
+//<SEO title="tifLLC" />
 
 const SecondPage = () => {
   return (
     <>
-      <SEO title="tifLLC" />
+      
 
       <section>
         <video controls>
