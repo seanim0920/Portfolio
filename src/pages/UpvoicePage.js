@@ -8,14 +8,37 @@ import video from "../video/grocerease.mp4"
 const UpvoicePage = () => {
   return (
     <>
-      <SEO title="Upvoice" />
+      <SEO title="egig inc: Upvoice" />
 
-      <h2>An unordered HTML list</h2>
-      <ul style={{display: "flex", flex: 1}}>
-      <li style={{fontSize: 20}}>Hey there</li>
-      <li>Hey there</li>
-      <li>Hey there</li>
-      </ul>
+      <section>
+        <video controls>
+          <source src={video} type="video/mp4" />
+        </video>
+
+        <article>
+          <div>
+            <h2>
+              egig inc.
+            </h2>
+            <h3>
+              Upvoice - Crowdfunding Platform <br />
+              Front-End Developer / UI Designer <br />
+              Duration: Sept 2018 - Dec 2018 <br />
+            </h3>
+          </div>
+
+          <div>
+            <h4>Achievements:</h4>
+            <ul>
+            <li>Produced marketing materials including a promotional banner, pitch poster and slide deck.</li>
+            <li>Designed user flows to improve navigation.</li>
+            <li>Prototyped responsive user interfaces for desktop and mobile versions of the app with Sketch Anima.</li>
+            <li>Developed XML layouts for all screens on Android and communicated with other engineers to ensure they were compatible with the REST API.</li>
+            <li><a href="https://ideahub.sites.ucsc.edu/2019/05/23/2019-pitch-for-social-and-creative-enterprise/">Nominated and presented for IDEA Hub’s 2019 Pitch for Social and Creative Enterprise.</a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </>
   )
 }

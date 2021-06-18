@@ -79,3 +79,8 @@ article {
 }
 
 video { height: 100%; width: auto }
+
+a {
+  color: lightblue;
+  text-decoration: none;
+}

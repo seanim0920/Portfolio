@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useState, useEffect, useCallback } from "react"
 
 import SEO from "../components/seo"
 import video from "../video/socialnetwork.mp4"
