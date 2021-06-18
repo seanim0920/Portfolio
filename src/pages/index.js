@@ -1,8 +1,6 @@
 import * as React from "react"
-import { useState, useEffect, useCallback } from "react"
 
 import SEO from "../components/seo"
-import withSplashScreen from "../components/withSplashScreen"
 
 import HomePage from "../pages/home"
 import SocialNetworkPage from "../pages/SocialNetworkPage"
@@ -40,4 +38,4 @@ const IndexPage = () => {
   )
 }
 
-export default withSplashScreen(IndexPage)
+export default IndexPage
