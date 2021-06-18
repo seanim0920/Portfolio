@@ -10,9 +10,9 @@ const FiveStarsintheDarkPage = () => {
       <SEO title="egig inc: Upvoice" />
 
 
-      <div>
-
-        <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", height: "100vh", marginTop: "10vmin", }}>
+      <section style={{flexDirection: "column"}}>
+        <YoutubeEmbed embedId="5tdXKqkbyMk"/>
+        <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", height: "100vh", marginTop: "5vmin" }}>
           <div>
             <h2 style={{ fontSize: "14vmin", lineHeight: "14vmin", marginBottom: "2vmin" }}>Five Stars <br /> in the Dark</h2>
             <h3>
@@ -33,7 +33,7 @@ const FiveStarsintheDarkPage = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
