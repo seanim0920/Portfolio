@@ -6,15 +6,29 @@ import Timeline from "../components/timeline"
 import withSplashScreen from "../components/withSplashScreen"
 
 import HomePage from "../pages/home"
-import SecondPage from "../pages/page-2"
+import SocialNetworkPage from "../pages/SocialNetworkPage"
+import GrocerEasePage from "../pages/GrocerEasePage"
+import UpvoicePage from "../pages/UpvoicePage"
 
 const IndexPage = () => {
   return (
     <>
       <SEO title="Sean Fronteras" />
       
-      <HomePage/>
-      <SecondPage/>
+      {
+        //<HomePage/>
+      }
+      {
+        //<SocialNetworkPage/>
+      }
+      {
+        //<GrocerEasePage/>
+      }
+      {
+        <UpvoicePage/>
+      }
+      
+      
     </>
   )
 }

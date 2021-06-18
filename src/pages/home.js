@@ -10,11 +10,14 @@ const HomePage = () => {
       <SEO title="Sean Fronteras" />
       
       <div style={{
-          height: "50%",
-          width: "100%",
+          height: "99vh",
+          width: "99vw",
           position: "absolute",
         }}>
-        <h1
+        <Cube/>
+      </div>
+      
+      <h1
           style={{
             fontSize: "75vmin",
             color: "gray",
@@ -29,14 +32,12 @@ const HomePage = () => {
             fontSize: "33.5vmin",
             color: "gray",
             textAlign: "center",
-            lineHeight: "50vmin",
+            lineHeight: "40vmin",
           }}
         >
           FRONTERAS
         </h1>
-      </div>
 
-      <Cube/>
     </>
   )
 }
