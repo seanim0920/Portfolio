@@ -32,7 +32,7 @@ const AboutMePage = () => {
           <div style={{ flexBasis: "0", flexGrow: "1", marginLeft: "5vmin", marginTop: "0" }}>
             <p>I'm a software engineer passionate about user-focused design.
               My experience includes developing accessible, high-quality consumer-facing applications, working with cross-functional teams in fast-paced agile environments, managing systems of sizeable scopes and complexities, writing performant and maintainable code, and finding innovative solutions to complex challenges.
-              I care very deeply about the people who use the software I develop, and value feedback above all else. <a href="https://www.linkedin.com/in/sean-fronteras-342431185/">My goal is to learn as much as I can, and have fun doing it.</a>
+              I care very deeply about the people who use the software I develop, and value feedback above all else. My goal is to learn as much as I can, and have fun doing it.
             </p>
           </div>
         </div>

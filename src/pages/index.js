@@ -13,27 +13,29 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Portfolio" />
-      
+
       {
-        <HomePage/>
+        <HomePage />
       }
       {
-        <AboutMePage/>
+        <AboutMePage />
       }
       {
-        <SocialNetworkPage/>
+        <SocialNetworkPage />
       }
       {
-        <UpvoicePage/>
+        <UpvoicePage />
       }
       {
-        <GrocerEasePage/>
+        <GrocerEasePage />
       }
       {
-        <FiveStarsintheDarkPage/>
+        <FiveStarsintheDarkPage />
       }
-      
-      
+
+      <footer>
+        <a href="https://www.linkedin.com/in/sean-fronteras-342431185/">Connect with me on LinkedIn</a> or <a href="https://github.com/seanim0920">view my github.</a> For business inquiries email sean.t.front@gmail.com
+      </footer>
     </>
   )
 }
