@@ -10,54 +10,34 @@ const GrocerEasePage = () => {
     <>
       <SEO title="GrocerEase" />
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center"
-        }}>
-        <video controls style={{ height: "90vh", width: "auto" }}>
+      <section>
+        <video controls>
           <source src={video} type="video/mp4" />
         </video>
 
-        <div
-          style={{
-            width: "40%",
-            height: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            marginLeft: "15vmin",
-            marginRight: "10vmin"
-          }}>
+        <article>
           <div>
-            <h2
-              style={{
-                fontSize: "15vmin",
-                color: "white",
-                textAlign: "left",
-                marginTop: "7vmin",
-                lineHeight: "11.5vmin"
-              }}
-            >
+            <h2>
               GrocerEase
             </h2>
             <h3>
               Grocery Tracker and Recipe App <br />
-              Role: Front-End Developer <br />
+              Front-End Developer <br />
               Duration: Sept 2018 - Dec 2018 <br />
             </h3>
           </div>
 
-          <p style={{ alignItems: "flex-end", marginBottom: "7vmin" }}>
-            Acheivements: <br /> 
-            • Learned to use React Native and Firebase in 10 weeks.<br />
-            • Developed networked features including a login system and a grocery inventory system that synchronizes in realtime with other devices.<br />
-            • Designed quality of life features to help users find recipes they can cook, including an inventory matching system and search system.<br />
-            • Collaborated with four other engineering students using scrum framework and agile methods.<br />
-          </p>
-        </div>
-      </div>
+          <div>
+            <h4>Achievements:</h4>
+            <ul>
+            <li>Developed networked features including an account system that allows users to update their grocery inventory across all of their devices synchronously.</li>
+            <li>Designed user flows to make all features easily accessible.</li>
+            <li>Produced quality of life features including a recipe recommendation system and recipe reader.</li>
+            <li>Learned to use scrum framework and agile methods to collaborate with four other engineering students.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </>
   )
 }

@@ -2,7 +2,6 @@ import * as React from "react"
 import { useState, useEffect, useCallback } from "react"
 
 import SEO from "../components/seo"
-import Timeline from "../components/timeline"
 import withSplashScreen from "../components/withSplashScreen"
 
 import HomePage from "../pages/home"
@@ -16,13 +15,13 @@ const IndexPage = () => {
       <SEO title="Sean Fronteras" />
       
       {
-        //<HomePage/>
+        <HomePage/>
       }
       {
-        //<SocialNetworkPage/>
+        <SocialNetworkPage/>
       }
       {
-        //<GrocerEasePage/>
+        <GrocerEasePage/>
       }
       {
         <UpvoicePage/>
