@@ -1,0 +1,11 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/UpVoice Banner.png": "static/UpVoice Banner-2e7d50d67497aa85e095d1583e1d44a1.png",
+  "static/feed.png": "static/feed-3e4013dea8714a14d42a949114ad35ea.png",
+  "static/grocerease.mp4": "static/grocerease-1dc59a078fedcbd2acf334ec8094f376.mp4",
+  "static/map1.jpg": "static/map1-dcdde9ee25cf74b548ab4c696605db4d.jpg",
+  "static/recipescreen.png": "static/recipescreen-73c2076ed00b8de547ae35f27dad5334.png",
+  "static/socialnetwork.mp4": "static/socialnetwork-c16722513ed7214b937b5bce488df780.mp4",
+  "static/upvoiceandroid.webp": "static/upvoiceandroid-19e5c5d0cb80b7962404e64702ff019a.webp"
+}
