@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
+h1, h2, h3, h4, h5, h6, p, ul, li, footer {
   margin-bottom: 0rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -84,4 +84,17 @@ video { height: 100%; width: auto }
 a {
   color: lightblue;
   text-decoration: none;
+}
+
+footer {
+  font-weight: normal;
+  text-align: center;
+  font-size: 2vmin;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+  color: gray
+}
+
+footer > a {
+  color: pink
 }
