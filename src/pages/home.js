@@ -9,7 +9,7 @@ const HomePage = () => {
       <SEO title="Sean Fronteras" />
       
       <div style={{
-          height: "99vh",
+          height: "16vw",
           width: "99vw",
           position: "absolute",
         }}>
@@ -18,7 +18,7 @@ const HomePage = () => {
       
       <h1
           style={{
-            fontSize: "75vmin",
+            fontSize: "36vw",
             color: "gray",
             textAlign: "center",
             lineHeight: "60vmin",
@@ -28,7 +28,7 @@ const HomePage = () => {
         </h1>
         <h1
           style={{
-            fontSize: "33.5vmin",
+            fontSize: "16.1vw",
             color: "gray",
             textAlign: "center",
             lineHeight: "40vmin",

@@ -2,24 +2,47 @@ import * as React from "react"
 
 import SEO from "../components/seo"
 import map1 from "../images/map1.jpg";
+import brochure from "../images/page-1.jpg";
+import game from "../images/screenshot.png";
 import banner from "../images/UpVoice Banner.png";
 import recipe from "../images/recipescreen.png";
-import menu from "../images/feed.png";
+import feed from "../images/feed.png";
+import feed2 from "../images/feed2.png";
 //import "./page-2.css"
 //<SEO title="About Me" />
 
 const AboutMePage = () => {
   return (
     <>
-
       <section style={{flexDirection: "column"}}>
-        
-        <div style={{ display: "flex", flexDirection: "row", marginLeft: "0vmin", marginRight: "0vmin", justifyContent: "flex-start" }}>
-          <img src={map1} alt="Upvoice Web App Map View" style={{maxWidth: "auto", maxHeight: "45vh", marginLeft: "5vmin", marginRight: "5vmin"}} />
-          <img src={banner} alt="Upvoice Kiosk Banner" style={{maxWidth: "auto", maxHeight: "45vh", marginLeft: "5vmin", marginRight: "5vmin"}} />
-          <img src={recipe} alt="GrocerEase Recipe Screen" style={{maxWidth: "auto", maxHeight: "45vh", marginLeft: "5vmin", marginRight: "5vmin"}} />
-          <img src={menu} alt="Five Stars in the Dark Menu" style={{maxWidth: "auto", maxHeight: "45vh", marginLeft: "5vmin", marginRight: "5vmin"}} />
-        </div>
+        <ul class="carousel">
+          {
+            /*
+          <li>
+            <img src={game} alt="Fsitd Screenshot"/>
+          </li>
+            */
+          }
+          <li>
+            <img src={map1} alt="Upvoice Web App Map View"/>
+          </li>
+          <li>
+            <img src={banner} alt="Upvoice Kiosk Banner"/>
+          </li>
+          <li>
+            <img src={recipe} alt="GrocerEase Recipe Screen"/>
+          </li>
+          <li>
+            <img src={feed} alt="tif Feed Screen"/>
+          </li>
+          <li>
+            <img src={feed2} alt="tif Feed Screen 2"/>
+          </li>
+          <li>
+            <img src={brochure} alt="Fsitd Brochure"/>
+          </li>
+        </ul>
+
         <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", marginTop: "5vmin" }}>
           <div>
             <h2 style={{ lineHeight: "14vmin", marginBottom: "2vmin" }}>About Me</h2>
