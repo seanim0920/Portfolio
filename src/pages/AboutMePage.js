@@ -3,7 +3,7 @@ import * as React from "react"
 import SEO from "../components/seo"
 import map1 from "../images/map1.jpg";
 import brochure from "../images/page-1.jpg";
-import game from "../images/screenshot.png";
+import fund from "../images/fund.webp";
 import banner from "../images/UpVoice Banner.png";
 import recipe from "../images/recipescreen.png";
 import feed from "../images/feed.png";
@@ -11,18 +11,26 @@ import feed2 from "../images/feed2.png";
 //import "./page-2.css"
 //<SEO title="About Me" />
 
+function setVw() {
+  if (typeof document !== `undefined`) {
+    let vw = document.documentElement.clientWidth / 100;
+    document.documentElement.style.setProperty('--vw', `${vw}px`);
+  }
+}
+
+setVw();
+if (typeof window !== `undefined`) {
+  window.addEventListener('resize', setVw);
+}
+
 const AboutMePage = () => {
   return (
     <>
       <section style={{flexDirection: "column"}}>
         <ul class="carousel">
-          {
-            /*
           <li>
-            <img src={game} alt="Fsitd Screenshot"/>
+            <img src={fund} alt="Upvoice Fund Screen"/>
           </li>
-            */
-          }
           <li>
             <img src={map1} alt="Upvoice Web App Map View"/>
           </li>

@@ -1,9 +1,11 @@
-body { margin:0;
-display: flex; }
-
 html {
   background-color: black;
+  max-width: 100%;
+  width: 100%;
 }
+
+body { margin:0;
+  display: flex; }
 
 p {
   color: white;
@@ -66,7 +68,6 @@ section {
   height: 100vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  margin-right: 10vmin;
 }
 
 article {
@@ -87,9 +88,10 @@ video { height: 100%; width: auto }
   flex-direction: row;
   justify-content: flex-start;
 
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  width: calc(var(--vw, 99vw) * 100);
+  overflow: hidden;
   
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -98,8 +100,10 @@ video { height: 100%; width: auto }
 .carousel > li {
   height: 45vh;
   flex-grow: 1;
-  margin-left: 1vmin;
-  margin-right: 1vmin;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+
+  transform: translateX(-5vw);
 
   box-sizing: content-box;
 }
