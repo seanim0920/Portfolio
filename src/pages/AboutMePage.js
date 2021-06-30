@@ -26,7 +26,7 @@ if (typeof window !== `undefined`) {
 const AboutMePage = () => {
   return (
     <>
-      <section style={{flexDirection: "column"}}>
+      <section class="horizontal">
         <ul class="carousel">
           <li>
             <img src={fund} alt="Upvoice Fund Screen"/>
@@ -51,24 +51,24 @@ const AboutMePage = () => {
           </li>
         </ul>
 
-        <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", marginTop: "5vmin" }}>
-          <div>
-            <h2 style={{ lineHeight: "14vmin", marginBottom: "2vmin" }}>About Me</h2>
-            <h3>
-              B.S. Computer Science {"&"} Game Design <br />
-              University of California, Santa Cruz <br />
-            </h3>
-          </div>
-          <div style={{ flexBasis: "0", flexGrow: "1", marginLeft: "10vmin", marginTop: "0" }}>
-            <p>I'm a software engineer passionate about user-focused design.
-              My experience includes developing accessible, high-quality consumer-facing applications, working with cross-functional teams in fast-paced agile environments, managing systems of sizeable scopes and complexities, writing performant and maintainable code, and finding innovative solutions to complex challenges.
-              I care very deeply about the people who use the software I develop, and value feedback above all else. My goal is to learn as much as I can, and have fun doing it.
-            </p>
-          </div>
-        </div>
+        <article>
+          <h2 style={{ lineHeight: "14vmin", marginBottom: "2vmin" }}>About Me</h2>
+          <h3>
+          A software engineer passionate about user-focused design
+          </h3>
+          <p>
+            I've always been interested in developing accessible, high-quality applications that everyone can enjoy, as well as breaking the mold and inventing unique experiences that consumers haven't seen before. My experience includes working with cross-functional teams in fast-paced agile environments, managing systems of sizeable scopes and complexities, writing performant and maintainable code, and finding innovative solutions to complex challenges.
+            I care very deeply about the people who use the software I develop, and value feedback above all else. My goal is to learn as much as I can, and have fun doing it. <br/>
+            Graduated from the University of California, Santa Cruz in 2020 with a double major in Computer Science and Computer Game Design. 
+          </p>
+        </article>
       </section>
     </>
   )
 }
+
+//Major projects: GrocerEase, Five Stars in the Dark, Upvoice (egig inc), tif
+//contact info
+//education
 
 export default AboutMePage

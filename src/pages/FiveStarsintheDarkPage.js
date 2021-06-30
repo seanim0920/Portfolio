@@ -10,7 +10,7 @@ const FiveStarsintheDarkPage = () => {
     <>
       <section style={{flexDirection: "column", marginRight: "0"}}>
         <YoutubeEmbed embedId="Q_NTqn-K1ZM"/>
-        <div style={{ display: "flex", flexDirection: "row", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", height: "100vh", marginTop: "5vmin" }}>
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", flexBasis: "content", marginLeft: "10vmin", marginRight: "10vmin", height: "100vh", marginTop: "5vmin" }}>
           <div>
             <h2 style={{ fontSize: "14vmin", lineHeight: "14vmin", marginBottom: "2vmin" }}>Five Stars <br /> in the Dark</h2>
             <h3>

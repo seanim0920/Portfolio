@@ -11,7 +11,7 @@ const UpvoicePage = () => {
     <>
 
       <section>
-        <img src={android} alt="Upvoice Web App Map View" style={{ height: "100%", width: "auto" }} />
+        <img src={android} alt="Upvoice Web App Map View" style={{ height: "100%", width: "auto", marginLeft: "15vw" }} />
 
         <article>
           <div>
