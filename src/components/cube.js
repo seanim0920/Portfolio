@@ -62,7 +62,7 @@ const Cube = () => {
               <h1
                 style={{
                   fontSize: "8.75vmin",
-                  margin: "1vmin",
+                  marginLeft: "1vmin",
                   position: "absolute",
                   top: "0vmin",
                   color: "black",
@@ -77,7 +77,7 @@ const Cube = () => {
               <h1
                 style={{
                   fontSize: "8.75vmin",
-                  margin: "1vmin",
+                  marginLeft: "1vmin",
                   position: "absolute",
                   top: "29vmin",
                   color: "white",

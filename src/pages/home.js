@@ -15,27 +15,23 @@ const HomePage = () => {
         }}>
         <Cube/>
       </div>
-      
+
       <h1
-          style={{
-            fontSize: "36vw",
-            color: "gray",
-            textAlign: "center",
-            lineHeight: "60vmin",
-          }}
-        >
-          SEAN
-        </h1>
-        <h1
-          style={{
-            fontSize: "16.1vw",
-            color: "gray",
-            textAlign: "center",
-            lineHeight: "40vmin",
-          }}
-        >
-          FRONTERAS
-        </h1>
+        style={{
+          fontSize: "36vw",
+          lineHeight: "30vw",
+        }}
+      >
+        SEAN
+      </h1>
+      <h1
+        style={{
+          fontSize: "16.1vw",
+          lineHeight: "20vw",
+        }}
+      >
+        FRONTERAS
+      </h1>
 
     </>
   )
