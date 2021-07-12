@@ -2,6 +2,7 @@ import * as React from "react"
 
 import SEO from "../components/seo"
 import Cube from "../components/cube"
+import ScrollButton from "../components/ScrollButton"
 
 const HomePage = () => {
   return (
@@ -32,6 +33,8 @@ const HomePage = () => {
       >
         FRONTERAS
       </h1>
+
+<ScrollButton/>
 
     </>
   )

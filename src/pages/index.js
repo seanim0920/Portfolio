@@ -15,22 +15,22 @@ const IndexPage = () => {
       <SEO title="Portfolio" />
 
       {
-        <HomePage />
+        <HomePage id="home" />
       }
       {
-        <AboutMePage />
+        <AboutMePage id="about" />
       }
       {
-        <SocialNetworkPage />
+        <SocialNetworkPage id="tif" />
       }
       {
-        <UpvoicePage />
+        <UpvoicePage id="upvoice" />
       }
       {
-        <GrocerEasePage />
+        <GrocerEasePage id="grocerease" />
       }
       {
-        <FiveStarsintheDarkPage />
+        <FiveStarsintheDarkPage id="fsitd" />
       }
 
       <footer>
