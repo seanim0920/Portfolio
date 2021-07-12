@@ -1,7 +1,6 @@
 html {
   background-color: black;
-  max-width: 100%;
-  width: 100%;
+  scroll-behavior: smooth;
 }
 
 body { margin:0;
@@ -32,21 +31,24 @@ h1, h2, h3, h4, h5, h6, p, ul, li, footer {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
+}
+
+h1 {
+  color: gray;
+  text-align: center;
 }
 
 h2 {
   font-size: 7vw;
   color: white;
   text-align: left;
-  margin-bottom: 4.5vmin;
-  line-height: 15vmin;
+  margin-bottom: 0.5vw;
+  line-height: 7.5vw;
 }
 
 h3 {
   font-size: 2.25vw;
-  line-height: 7vmin;
+  line-height: 3.5vw;
 }
 
 h3, h4, p, ul, li {
@@ -66,11 +68,14 @@ ul {
 
 section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100vmin;
+  max-width: calc(var(--vw, 100vw) * 100);
   padding-top: 5vh;
   padding-bottom: 5vh;
+  padding-right: 10vmin;
+  padding-left: 10vmin;
 }
 
 .horizontal {
@@ -79,24 +84,23 @@ section {
 }
 
 article {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10vw;
-  margin-right: 10vw;
 }
 
 .horizontal > article {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
-video { height: 100%; width: auto; margin-left: 15vw; }
+video { height: 100%; width: auto; }
 
 .carousel {
   list-style-type: none;
@@ -110,12 +114,11 @@ video { height: 100%; width: auto; margin-left: 15vw; }
   height: 100%;
   overflow: hidden;
   
-  -ms-overflow-style: none;
+  -ms-overflow-style: hidden;
   scrollbar-width: none;
 }
 
 .carousel > li {
-  height: 45vh;
   flex-grow: 1;
   margin-left: 0.5vw;
   margin-right: 0.5vw;

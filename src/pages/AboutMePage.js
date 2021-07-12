@@ -51,14 +51,16 @@ const AboutMePage = () => {
           </li>
         </ul>
 
-        <article>
-          <h2 style={{ lineHeight: "14vmin", marginBottom: "2vmin" }}>About Me</h2>
-          <h3>
-          A software engineer passionate about user-focused design
-          </h3>
-          <p>
+        <article style={{flexDirection: "row", marginTop: "6vmin", flex: 1, justifyContent: "space-between"}}>
+          <div style={{alignSelf: "flex-start", justifyContent: "flex-start", flex: 0.66}}>            
+            <h2 style={{}}>About Me</h2>
+            <h3>
+            A software engineer passionate <br/> about user-focused design
+            </h3>
+          </div>
+          <p style={{columnCount: 2, flex: 1}}>
             I've always been interested in developing accessible, high-quality applications that everyone can enjoy, as well as breaking the mold and inventing unique experiences that consumers haven't seen before. My experience includes working with cross-functional teams in fast-paced agile environments, managing systems of sizeable scopes and complexities, writing performant and maintainable code, and finding innovative solutions to complex challenges.
-            I care very deeply about the people who use the software I develop, and value feedback above all else. My goal is to learn as much as I can, and have fun doing it. <br/>
+            Very flexible and open to learning about new technologies and tools. I care very deeply about the people who use the software I develop, and value feedback above all else. My goal is to learn as much as I can, and have fun doing it. <br/>
             Graduated from the University of California, Santa Cruz in 2020 with a double major in Computer Science and Computer Game Design. 
           </p>
         </article>
